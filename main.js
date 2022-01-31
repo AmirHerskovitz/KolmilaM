@@ -260,8 +260,7 @@ const point = array2;
     {id: '23',
     latex: '(23,0)',
     showLabel: true,
-    label: 'ג'
-    color: '#000000'},
+    label: 'ג'},
      { id: `list${i}`, latex: `${identifier}=${points}`, pointSize:'2'},
      { id: `poly${i}`, latex: `\\operatorname{polygon}\\left(${identifier}\\right)`, color: '#000000', fillOpacity: '0.08', lineWidth: '1'}
    ])

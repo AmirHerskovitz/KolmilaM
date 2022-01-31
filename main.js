@@ -241,7 +241,26 @@ const point = array2;
    const { identifier, points } = polygons[i];
    
    calc.setExpressions([
-      
+    {id: '27',
+    latex: '(27,0)',
+    showLabel: true,
+    label: 'א'},
+    {id: '26',
+    latex: '(26,0)',
+    showLabel: true,
+    label: 'ב'},
+    {id: '25',
+    latex: '(25,0)',
+    showLabel: true,
+    label: 'ג'},
+    {id: '24',
+    latex: '(24,0)',
+    showLabel: true,
+    label: 'ד'},
+    {id: '23',
+    latex: '(23,0)',
+    showLabel: true,
+    label: 'ג'},
      { id: `list${i}`, latex: `${identifier}=${points}`, pointSize:'2'},
      { id: `poly${i}`, latex: `\\operatorname{polygon}\\left(${identifier}\\right)`, color: '#000000', fillOpacity: '0.08', lineWidth: '1'}
    ])

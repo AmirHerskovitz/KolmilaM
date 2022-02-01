@@ -13,7 +13,6 @@ function runAlgorithm(a){
     method: "POST",
     headers: {
       // authority: "nakdan-4-0.loadbalancer.dicta.org.il",
-
       "sec-ch-ua":
         '" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"',
       "sec-ch-ua-mobile": "?0",
@@ -30,6 +29,7 @@ function runAlgorithm(a){
       "accept-language": "en-US,en;q=0.9",
       "Content-Type": "application/json; charset=UTF-8",
     },
+
     body: JSON.stringify({
       task: "nakdan",
       data: string,
@@ -43,6 +43,7 @@ function runAlgorithm(a){
       genre: "modern",
     }),
   })
+
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -52,6 +53,7 @@ function runAlgorithm(a){
           dataSet.push(item["options"][0][0]);
         } catch {}
       });
+
       console.log(dataSet.join(" "));
       const dictatedString = dataSet.join(" ");
       const spreadArray = [...dictatedString];
@@ -59,13 +61,10 @@ function runAlgorithm(a){
       const listOfNumbers =  numList(spreadArray);
       const xyarrays = twoArrays(listOfNumbers);
       console.log(xyarrays[1]); 
-    
       createPolygon(xyarrays[0],xyarrays[1]);
-     
     });
     }
           
-   
 function numList(a){
 const usingSpread = a;
 const arrNum=[];
@@ -284,8 +283,74 @@ const point = array2;
     {id: '17',
     latex: '(17,0)',
     showLabel: true,
+    label: 'ך'},
+    {id: '16',
+    latex: '(16,0)',
+    showLabel: true,
     label: 'כ'},
-    
+    {id: '15',
+    latex: '(15,0)',
+    showLabel: true,
+    label: 'ל'},
+    {id: '14',
+    latex: '(14,0)',
+    showLabel: true,
+    label: 'ם'},
+    {id: '13',
+    latex: '(13,0)',
+    showLabel: true,
+    label: 'מ'},
+    {id: '12',
+    latex: '(12,0)',
+    showLabel: true,
+    label: 'ן'},
+    {id: '11',
+    latex: '(11,0)',
+    showLabel: true,
+    label: 'נ'},
+    {id: '10',
+    latex: '(10,0)',
+    showLabel: true,
+    label: 'ס'},
+    {id: '9',
+    latex: '(9,0)',
+    showLabel: true,
+    label: 'ע'},
+    {id: '8',
+    latex: '(8,0)',
+    showLabel: true,
+    label: 'ף'},
+    {id: '7',
+    latex: '(7,0)',
+    showLabel: true,
+    label: 'פ'},
+    {id: '6',
+    latex: '(6,0)',
+    showLabel: true,
+    label: 'ץ'},
+    {id: '5',
+    latex: '(5,0)',
+    showLabel: true,
+    label: 'צ'},
+    {id: '4',
+    latex: '(4,0)',
+    showLabel: true,
+    label: 'ק'},
+    {id: '3',
+    latex: '(3,0)',
+    showLabel: true,
+    label: 'ר'},
+    {id: '2',
+    latex: '(2,0)',
+    showLabel: true,
+    label: 'ש'},
+    {id: '1',
+    latex: '(1,0)',
+    showLabel: true,
+    label: 'ת'},
+
+
+
 
 
      { id: `list${i}`, latex: `${identifier}=${points}`, pointSize:'2'},
